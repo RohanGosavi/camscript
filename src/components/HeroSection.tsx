@@ -60,7 +60,7 @@ const HeroSection = () => {
                   <span className="text-[10px] text-white/60 font-medium">3:42 PM</span>
                 </div>
                 {/* Physical Notch */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[25%] h-[28px] bg-black rounded-b-[14px] z-20 flex items-center justify-center">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[25%] h-[28px] bg-black z-20 flex items-center justify-center">
                   <div className="w-[6px] h-[6px] rounded-full border border-[#2a2a3a]" style={{ background: 'radial-gradient(circle at 40% 40%, #3a3a4a, #1a1a2a)' }}>
                     <div className="absolute top-[1px] left-[1.5px] w-[2px] h-[2px] rounded-full" style={{ background: 'rgba(100,130,220,0.3)' }} />
                   </div>
