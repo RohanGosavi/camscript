@@ -31,7 +31,7 @@ const SetupsSection = () => (
                         <div className="w-[5px] h-[5px] rounded-full bg-[#febc2e]/70" />
                         <div className="w-[5px] h-[5px] rounded-full bg-[#28c840]/70" />
                       </div>
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[22%] h-4 bg-black rounded-b-[6px] flex items-center justify-center">
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[22%] h-4 bg-black flex items-center justify-center">
                         <div className="w-[3px] h-[3px] rounded-full bg-[#2a2a3a] border border-[#333]" />
                       </div>
                     </div>
