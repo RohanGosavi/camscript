@@ -52,7 +52,7 @@ const MenuBar = () => {
     <>
       <nav
         className={`menu-bar-transition fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-3 md:px-4 ${hidden ? 'menu-bar-hidden' : ''}`}
-        style={{ height: 28, background: 'rgba(30,30,30,0.82)', backdropFilter: 'saturate(180%) blur(20px)', WebkitBackdropFilter: 'saturate(180%) blur(20px)' }}
+        style={{ height: 28, background: 'rgba(0,0,0,0.95)', backdropFilter: 'saturate(180%) blur(20px)', WebkitBackdropFilter: 'saturate(180%) blur(20px)' }}
       >
         <div className="flex items-center gap-0">
           <button onClick={() => scrollTo('hero')} className="flex items-center justify-center px-2 py-0.5 rounded hover:bg-white/10 transition-colors">
