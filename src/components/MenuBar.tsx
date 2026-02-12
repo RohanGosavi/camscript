@@ -96,7 +96,7 @@ const MenuBar = () => {
         <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 z-[60]">
           <div
             className="bg-black w-[200px] rounded-b-[16px] flex flex-col items-center overflow-hidden"
-            style={{ height: 58 }}
+            style={{ height: 70 }}
           >
             {/* Camera dot */}
             <div
