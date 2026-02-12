@@ -57,7 +57,8 @@ const MenuBar = () => {
     <>
       {/* CamScript Notch */}
       <div
-        className={`menu-bar-transition hidden md:block fixed top-0 left-1/2 -translate-x-1/2 z-[60] ${hidden ? "menu-bar-hidden" : ""}`}
+        className="menu-bar-transition hidden md:block fixed top-0 left-1/2 z-[60]"
+        style={{ transform: `translateX(-50%) ${hidden ? "translateY(-100%)" : "translateY(0)"}` }}
       >
         <div
           className="bg-black w-[200px] rounded-b-[16px] flex flex-col items-center overflow-hidden"
