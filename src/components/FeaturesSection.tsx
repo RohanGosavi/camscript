@@ -97,14 +97,14 @@ const FeaturesSection = () => (
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Present naturally, without<br className="hidden sm:block" /> distractions.</h2>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-2 gap-4">
         {features.map((f, i) => {
           const Icon = f.icon;
           const isWide = f.wide;
           return (
             <div
               key={i}
-              className={`bg-mist rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] ${isWide ? 'sm:col-span-2 lg:col-span-2' : ''}`}
+              className={`bg-mist rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] ${isWide ? 'sm:col-span-2' : ''}`}
             >
               {isWide ? (
                 <div className="flex flex-col md:flex-row">
