@@ -1,5 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
-import { Apple } from "lucide-react";
+
+const AppleLogo = () => (
+  <svg width="14" height="17" viewBox="0 0 14 17" fill="white" opacity="0.85">
+    <path d="M13.1 12.6c-.3.7-.7 1.3-1.1 1.8-.6.8-1.1 1.3-1.5 1.6-.6.5-1.3.7-2 .7-.5 0-1.1-.1-1.8-.4-.7-.3-1.3-.4-1.8-.4s-1.1.1-1.8.4c-.7.3-1.2.4-1.6.4-.7 0-1.4-.3-2-.8C.9 15.3.4 14.7 0 14c-.4-.8-.8-1.6-1-2.6s-.4-1.9-.4-2.8c0-1 .2-1.9.7-2.7.3-.6.8-1.1 1.4-1.5.6-.4 1.2-.6 1.9-.6.5 0 1.2.2 2 .5.8.3 1.3.5 1.5.5.2 0 .7-.2 1.6-.6.8-.3 1.5-.5 2.1-.4 1.5.1 2.7.7 3.4 1.9-1.4.8-2 2-2 3.5 0 1.2.4 2.1 1.3 2.9.4.4.8.7 1.3.9l-.3.9zM10 .3c0 .9-.3 1.8-1 2.6-.8.9-1.7 1.5-2.8 1.4 0-.1 0-.2 0-.3 0-.9.4-1.8 1-2.5.3-.4.8-.7 1.3-1C9 .2 9.5.1 10 0c0 .1 0 .2 0 .3z" transform="translate(1,0)"/>
+  </svg>
+);
 
 const MenuBar = () => {
   const [hidden, setHidden] = useState(false);
@@ -51,7 +56,7 @@ const MenuBar = () => {
       >
         <div className="flex items-center gap-0">
           <button onClick={() => scrollTo('hero')} className="flex items-center justify-center px-2 py-0.5 rounded hover:bg-white/10 transition-colors">
-            <Apple size={16} opacity={0.85} />
+            <AppleLogo />
           </button>
           <button onClick={() => scrollTo('hero')} className="text-white/90 text-[13px] font-bold px-2 py-0.5 rounded hover:bg-white/10 transition-colors" style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif" }}>
             CamScript
