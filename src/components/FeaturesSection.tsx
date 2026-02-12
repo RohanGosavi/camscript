@@ -34,16 +34,16 @@ const features = [
     desc: "Adjust window size, text size, and speed. Make it work your way.",
   },
   {
+    icon: FileEdit,
+    title: "Built-in editor",
+    desc: "Write and polish scripts right in CamScript. No need for another app.",
+  },
+  {
     icon: Lock,
     title: "Your content stays private",
     desc: "Everything runs locally on your Mac. No cloud, no accounts, no analytics. Your scripts never leave your device.",
     wide: true,
     graphic: "privacy",
-  },
-  {
-    icon: FileEdit,
-    title: "Built-in editor",
-    desc: "Write and polish scripts right in CamScript. No need for another app.",
   },
 ];
 
