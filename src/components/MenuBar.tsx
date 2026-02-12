@@ -72,20 +72,22 @@ const MenuBar = () => {
 
         {/* CamScript Notch */}
         <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 z-[60]">
-          <div className="bg-black w-[220px] h-[28px] rounded-b-[14px] flex items-center gap-2 px-4 overflow-hidden">
+          <div className="bg-black w-[200px] rounded-b-[16px] flex flex-col items-center overflow-hidden" style={{ height: 52 }}>
             {/* Camera dot */}
-            <div className="w-[8px] h-[8px] rounded-full flex-shrink-0 border border-[#333]" style={{ background: 'radial-gradient(circle at 35% 35%, #3a3a4a, #111)' }}>
-              <div className="w-[3px] h-[3px] rounded-full mt-[1px] ml-[1.5px]" style={{ background: 'rgba(100,130,220,0.35)' }} />
+            <div className="w-[10px] h-[10px] rounded-full flex-shrink-0 border border-[#333] mt-2" style={{ background: 'radial-gradient(circle at 35% 35%, #3a3a4a, #111)' }}>
+              <div className="w-[4px] h-[4px] rounded-full mt-[1.5px] ml-[2px]" style={{ background: 'rgba(100,130,220,0.35)' }} />
             </div>
-            {/* Scrolling prompter text */}
-            <div className="flex-1 overflow-hidden h-[18px] relative">
+            {/* Scrolling prompter text below camera */}
+            <div className="w-full overflow-hidden flex-1 relative px-3 mt-1">
               <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black to-transparent z-10" />
               <div className="absolute inset-y-0 right-0 w-3 bg-gradient-to-l from-black to-transparent z-10" />
-              <div className="animate-scroll-text whitespace-nowrap">
-                <span className="text-[9px] text-white/70 font-medium mr-6">Welcome everyone. Today I want to walk you through our latest updates.</span>
-                <span className="text-[9px] text-white/70 font-medium mr-6">We've been working hard on features you requested.</span>
-                <span className="text-[9px] text-white/70 font-medium mr-6">Let me show you what's new in CamScript.</span>
-                <span className="text-[9px] text-white/70 font-medium mr-6">Welcome everyone. Today I want to walk you through our latest updates.</span>
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-b from-black to-transparent z-10" />
+              <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-t from-black to-transparent z-10" />
+              <div className="animate-scroll-text">
+                <p className="text-[8px] text-white/70 font-medium leading-[1.5] text-center">Welcome everyone. Today I want to walk you through our latest updates.</p>
+                <p className="text-[8px] text-white/70 font-medium leading-[1.5] text-center">We've been working hard on features you requested.</p>
+                <p className="text-[8px] text-white/70 font-medium leading-[1.5] text-center">Let me show you what's new in CamScript.</p>
+                <p className="text-[8px] text-white/70 font-medium leading-[1.5] text-center">Welcome everyone. Today I want to walk you through our latest updates.</p>
               </div>
             </div>
           </div>
