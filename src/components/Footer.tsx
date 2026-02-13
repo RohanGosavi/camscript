@@ -1,3 +1,12 @@
+import { Link } from "react-router-dom";
+
+const footerLinks = [
+  { label: "Contact", to: "/contact" },
+  { label: "Changelog", to: "/changelog" },
+  { label: "License", to: "/license" },
+  { label: "Privacy", to: "/privacy" },
+];
+
 const Footer = () => (
   <footer className="py-10 px-6 border-t border-border">
     <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -11,8 +20,8 @@ const Footer = () => (
         <span className="text-sm text-smoke">© 2026 CamScript. All rights reserved.</span>
       </div>
       <div className="flex items-center gap-6">
-        {['Contact', 'Changelog', 'License', 'Privacy'].map(link => (
-          <a key={link} href="#" className="text-sm text-smoke hover:text-foreground transition-colors">{link}</a>
+        {footerLinks.map(link => (
+          <Link key={link.label} to={link.to} className="text-sm text-smoke hover:text-foreground transition-colors">{link.label}</Link>
         ))}
       </div>
     </div>
