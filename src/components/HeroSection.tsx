@@ -128,7 +128,7 @@ const HeroSection = () => {
           {/* Chin */}
           <div className="h-3 rounded-b-lg mx-[10%]" style={{ background: 'linear-gradient(to bottom, #1c1c1e, #2a2a2c)' }} />
           {/* Hinge */}
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[18%] h-2 rounded-b-md" style={{ background: 'linear-gradient(to bottom, #2a2a2c, #1a1a1c)' }} />
+          
         </div>
       </div>
     </section>);
