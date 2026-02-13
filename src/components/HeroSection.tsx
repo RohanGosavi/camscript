@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faApple } from "@fortawesome/free-brands-svg-icons";
+
 const ScrollingText = ({ speed = "animate-scroll-text" }: {speed?: string;}) =>
 <div className={speed}>
     <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">Welcome everyone. Today I want to walk you through our latest product updates.</p>
@@ -46,9 +49,7 @@ const HeroSection = () => {
             <div className="rounded-[10px] overflow-hidden relative" style={{ aspectRatio: '16/10', background: '#000' }}>
               {/* macOS Menu Bar inside screen */}
               <div className="h-[28px] flex items-center px-4 relative z-10" style={{ background: 'linear-gradient(to bottom, #38383d, #2c2c31)' }}>
-                <svg width="12" height="14" viewBox="0 0 14 17" fill="white" opacity="0.7" className="mr-4">
-                  <path d="M13.1 12.6c-.3.7-.7 1.3-1.1 1.8-.6.8-1.1 1.3-1.5 1.6-.6.5-1.3.7-2 .7-.5 0-1.1-.1-1.8-.4-.7-.3-1.3-.4-1.8-.4s-1.1.1-1.8.4c-.7.3-1.2.4-1.6.4-.7 0-1.4-.3-2-.8C.9 15.3.4 14.7 0 14c-.4-.8-.8-1.6-1-2.6s-.4-1.9-.4-2.8c0-1 .2-1.9.7-2.7.3-.6.8-1.1 1.4-1.5.6-.4 1.2-.6 1.9-.6.5 0 1.2.2 2 .5.8.3 1.3.5 1.5.5.2 0 .7-.2 1.6-.6.8-.3 1.5-.5 2.1-.4 1.5.1 2.7.7 3.4 1.9-1.4.8-2 2-2 3.5 0 1.2.4 2.1 1.3 2.9.4.4.8.7 1.3.9l-.3.9zM10 .3c0 .9-.3 1.8-1 2.6-.8.9-1.7 1.5-2.8 1.4 0-.1 0-.2 0-.3 0-.9.4-1.8 1-2.5.3-.4.8-.7 1.3-1C9 .2 9.5.1 10 0c0 .1 0 .2 0 .3z" transform="translate(1,0)" />
-                </svg>
+                <FontAwesomeIcon icon={faApple} className="text-white/70 text-[12px] mr-4" />
                 <div className="flex items-center gap-4">
                   <span className="text-[10px] text-white/60 font-medium">Finder</span>
                   <span className="text-[10px] text-white/50">File</span>
