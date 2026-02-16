@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/camscript">
+      <BrowserRouter basename="/camscript/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/contact" element={<Contact />} />
