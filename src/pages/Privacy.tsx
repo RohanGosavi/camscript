@@ -3,60 +3,50 @@ import { Link } from "react-router-dom";
 const Privacy = () => (
   <div className="min-h-screen bg-background text-foreground">
     <div className="max-w-3xl mx-auto px-6 py-20">
-      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 inline-block">← Back to home</Link>
+      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 inline-block">&larr; Back to home</Link>
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
       <p className="text-muted-foreground mb-12">Last updated: February 1, 2026</p>
 
       <div className="prose prose-sm max-w-none space-y-8 text-muted-foreground">
         <section>
-          <h2 className="text-xl font-semibold text-foreground mb-3">1. Information We Collect</h2>
-          <p>We collect information you provide directly, such as when you create an account, use our services, or contact support. This may include:</p>
+          <h2 className="text-xl font-semibold text-foreground mb-3">1. Our Privacy Commitment</h2>
+          <p>CamScript is designed with privacy at its core. The app runs entirely on your Mac — your scripts, settings, and data never leave your device. We do not collect, store, or transmit your content.</p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground mb-3">2. Information We Collect</h2>
+          <p>We collect minimal information only when you interact with us directly:</p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
-            <li>Name and email address</li>
-            <li>Payment information (processed securely via third-party providers)</li>
-            <li>Audio and video recordings you choose to transcribe</li>
-            <li>Usage data and analytics</li>
-            <li>Device information and IP address</li>
+            <li>Email address (only if you contact support or purchase)</li>
+            <li>Payment information (processed securely via third-party payment providers — we never see or store card details)</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-foreground mb-3">2. How We Use Your Information</h2>
-          <p>We use the collected information to:</p>
+          <h2 className="text-xl font-semibold text-foreground mb-3">3. What We Don't Collect</h2>
+          <p>CamScript does not collect:</p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
-            <li>Provide, maintain, and improve our services</li>
-            <li>Process transactions and send related information</li>
-            <li>Send technical notices, updates, and support messages</li>
-            <li>Respond to your comments, questions, and requests</li>
-            <li>Monitor and analyze trends, usage, and activities</li>
+            <li>Your scripts or text content</li>
+            <li>Screen recordings or camera data</li>
+            <li>Usage analytics or telemetry</li>
+            <li>Device identifiers or IP addresses</li>
+            <li>Clipboard data (Universal Clipboard stays between your Apple devices)</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-foreground mb-3">3. Data Storage & Security</h2>
-          <p>Your audio and video files are processed in real-time and are not stored on our servers beyond the active session unless you explicitly save them to your account. We use industry-standard encryption (AES-256) for data at rest and TLS 1.3 for data in transit.</p>
+          <h2 className="text-xl font-semibold text-foreground mb-3">4. Data Storage</h2>
+          <p>All your scripts and preferences are stored locally on your Mac. There is no cloud component, no account system, and no server-side storage. If you delete the app, all associated data is removed from your device.</p>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-foreground mb-3">4. Third-Party Services</h2>
-          <p>We may share information with third-party service providers who assist us in operating our services, including payment processors, cloud hosting providers, and analytics services. These providers are contractually obligated to protect your information.</p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold text-foreground mb-3">5. Your Rights</h2>
-          <p>Depending on your jurisdiction, you may have the right to:</p>
-          <ul className="list-disc pl-6 space-y-1 mt-2">
-            <li>Access and receive a copy of your personal data</li>
-            <li>Rectify or update your personal information</li>
-            <li>Request deletion of your personal data</li>
-            <li>Object to or restrict processing of your data</li>
-            <li>Data portability</li>
-          </ul>
+          <h2 className="text-xl font-semibold text-foreground mb-3">5. Third-Party Services</h2>
+          <p>We use a third-party payment processor to handle purchases. They are contractually obligated to protect your information and only use it to process your transaction.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-3">6. Cookies</h2>
-          <p>We use essential cookies to maintain your session and preferences. Analytics cookies are optional and can be disabled through your browser settings. We do not use cookies for advertising purposes.</p>
+          <p>The CamScript website may use essential cookies for basic functionality. We do not use advertising or tracking cookies.</p>
         </section>
 
         <section>

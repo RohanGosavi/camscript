@@ -1,11 +1,13 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Will there be a Windows version?", a: "No. CamScript is built specifically for macOS, taking advantage of the MacBook notch and native system APIs. There are no plans for a Windows version." },
+  { q: "Can I copy scripts from my iPhone?", a: "Yes! CamScript works seamlessly with Apple's Universal Clipboard. Write or edit your script in Notes, Google Docs, or any app on your iPhone — copy it, and paste directly into CamScript on your Mac. No cables, no file transfers." },
+  { q: "Does it work with OBS, Zoom, and Google Meet?", a: "Absolutely. CamScript is invisible during screen sharing and screen recordings. Your viewers and call participants will never see the prompter — only you can." },
+  { q: "Can I use it for YouTube videos?", a: "That's exactly what it's built for. Script your videos, read them naturally from the notch, and maintain perfect eye contact with the camera. No more memorizing lines or glancing at notes off-screen." },
   { q: "What if I lose my place?", a: "Hover over the prompter to pause auto-scrolling instantly. While paused, scroll manually with your trackpad or mouse to find your place. Move the cursor away and it resumes automatically." },
   { q: "Is this a one-time or monthly price?", a: "One-time. Pay $19 once and it's yours forever. No subscriptions, no recurring charges, no hidden fees." },
   { q: "Does it work with classic teleprompters?", a: "Yes. Use Floating Window mode to position CamScript's prompter anywhere — including behind a traditional beam splitter setup." },
-  { q: "Can I adjust scrolling speed?", a: "Absolutely. Use keyboard shortcuts or menu bar controls. You can also scroll manually while hovering for full control." },
+  { q: "Will there be a Windows version?", a: "No. CamScript is built specifically for macOS, taking advantage of the MacBook notch and native system APIs like Universal Clipboard. There are no plans for a Windows version." },
 ];
 
 const FAQSection = () => (

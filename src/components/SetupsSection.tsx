@@ -1,11 +1,11 @@
 const MiniScrollText = ({ speed = "animate-scroll-text" }: { speed?: string }) => (
   <div className={`${speed} text-center w-full`}>
-    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Your script text scrolls here naturally</p>
-    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Right below the camera for eye contact</p>
-    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Nobody sees this but you</p>
-    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Your script text scrolls here naturally</p>
-    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Right below the camera for eye contact</p>
-    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Nobody sees this but you</p>
+    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Hey everyone, welcome back to my channel</p>
+    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Today we're diving into something exciting</p>
+    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Let me show you step by step</p>
+    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Hey everyone, welcome back to my channel</p>
+    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Today we're diving into something exciting</p>
+    <p className="text-[3.5px] text-white/85 leading-snug mb-1">Let me show you step by step</p>
   </div>
 );
 
@@ -17,7 +17,7 @@ const SetupsSection = () => (
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Different setups, same confidence.</h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-3 gap-5">
         {/* Notch Prompter */}
         <div className="bg-card rounded-3xl border border-border p-8 md:p-10 shadow-sm transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]">
           <div className="mb-8">
@@ -128,6 +128,76 @@ const SetupsSection = () => (
             <h3 className="text-xl font-bold">Floating Window</h3>
           </div>
           <p className="text-smoke leading-relaxed">Place it anywhere on screen, resize freely. Perfect for external monitors or classic teleprompter setups.</p>
+        </div>
+
+        {/* iPhone to Mac */}
+        <div className="bg-card rounded-3xl border border-border p-8 md:p-10 shadow-sm transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]">
+          <div className="mb-8">
+            <div className="bg-mist rounded-2xl overflow-hidden flex justify-center items-center h-56 relative">
+              <div className="flex items-center gap-4">
+                {/* iPhone */}
+                <div className="w-[60px] rounded-xl p-[2px] relative" style={{ background: 'linear-gradient(to bottom, #333, #1c1c1e)' }}>
+                  <div className="rounded-[10px] overflow-hidden relative" style={{ aspectRatio: '9/19', background: '#0f0f18' }}>
+                    {/* Dynamic Island */}
+                    <div className="absolute top-1 left-1/2 -translate-x-1/2 w-[45%] h-[5px] bg-black rounded-full z-10" />
+                    {/* Notes app */}
+                    <div className="p-1.5 pt-3">
+                      <div className="bg-white/10 rounded-sm h-1.5 w-3/4 mb-1" />
+                      <div className="bg-white/10 rounded-sm h-1 w-full mb-0.5" />
+                      <div className="bg-white/10 rounded-sm h-1 w-full mb-0.5" />
+                      <div className="bg-white/10 rounded-sm h-1 w-2/3 mb-2" />
+                      <div className="bg-blue-500/30 rounded-sm h-1 w-full mb-0.5" />
+                      <div className="bg-blue-500/30 rounded-sm h-1 w-4/5" />
+                    </div>
+                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-[30%] h-[2px] bg-white/20 rounded-full" />
+                  </div>
+                </div>
+
+                {/* Arrow */}
+                <div className="flex flex-col items-center gap-1">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-smoke/60">
+                    <path d="M5 12h14" /><polyline points="12 5 19 12 12 19" />
+                  </svg>
+                  <span className="text-[7px] text-smoke/50 font-medium">Copy &amp; Paste</span>
+                </div>
+
+                {/* MacBook mini */}
+                <div className="w-[80px]">
+                  <div className="rounded-t-md p-[2px]" style={{ background: 'linear-gradient(to bottom, #333, #1c1c1e)' }}>
+                    <div className="rounded-t-[3px] overflow-hidden relative" style={{ aspectRatio: '16/10', background: '#0f0f18' }}>
+                      <div className="h-2.5 flex items-center px-1 relative" style={{ background: '#2c2c31' }}>
+                        <div className="flex gap-[2px]">
+                          <div className="w-[3px] h-[3px] rounded-full bg-[#ff5f57]/70" />
+                          <div className="w-[3px] h-[3px] rounded-full bg-[#febc2e]/70" />
+                          <div className="w-[3px] h-[3px] rounded-full bg-[#28c840]/70" />
+                        </div>
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[20%] h-2.5 bg-black" />
+                      </div>
+                      <div className="p-1">
+                        <div className="bg-white/10 rounded-sm h-1 w-full mb-0.5" />
+                        <div className="bg-white/10 rounded-sm h-1 w-full mb-0.5" />
+                        <div className="bg-white/10 rounded-sm h-1 w-3/4" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="h-1 rounded-b mx-[10%]" style={{ background: 'linear-gradient(to bottom, #1c1c1e, #2a2a2c)' }} />
+                </div>
+              </div>
+              <div className="absolute bottom-4 right-6">
+                <div className="flex items-center gap-1.5 bg-card rounded-full px-2.5 py-1 shadow-md">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/></svg>
+                  <span className="text-[8px] font-semibold">Universal Clipboard</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 className="text-xl font-bold">iPhone to Mac</h3>
+          </div>
+          <p className="text-smoke leading-relaxed">Write your script on iPhone, copy it, and it's instantly ready in CamScript — thanks to Apple's Universal Clipboard.</p>
         </div>
       </div>
     </div>

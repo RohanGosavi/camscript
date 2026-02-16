@@ -5,6 +5,7 @@ const benefits = [
   "Lifetime access & updates",
   "100% private — runs locally",
   "Notch + Floating modes",
+  "Universal Clipboard support",
 ];
 
 const PricingSection = () => (
@@ -12,7 +13,7 @@ const PricingSection = () => (
     <div className="max-w-lg mx-auto text-center">
       <p className="text-sm font-semibold text-smoke/70 uppercase tracking-widest mb-3">Pricing</p>
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Simple, fair, one-time.</h2>
-      <p className="text-smoke mb-12">No subscriptions. No hidden fees. Pay once, own it forever.</p>
+      <p className="text-smoke mb-12">Join creators who present with confidence. No subscriptions. No hidden fees. Pay once, own it forever.</p>
 
       <div className="relative">
         {/* Glow border */}

@@ -1,47 +1,47 @@
-import { Eye, EyeOff, Target, AppWindow, Pause, SlidersHorizontal, Type, Lock, FileEdit } from "lucide-react";
+import { EyeOff, Target, AppWindow, Pause, SlidersHorizontal, Lock, FileEdit, Monitor } from "lucide-react";
 
 const features = [
   {
     icon: EyeOff,
     title: "Invisible to your audience",
-    desc: "When screen sharing, only you see the prompter. Your viewers see your presentation, not your script.",
+    desc: "Screen sharing on Zoom, Google Meet, or recording in OBS? Only you see the prompter. Your viewers see your presentation — never your script.",
     wide: true,
     graphic: "screenshare",
   },
   {
     icon: Target,
     title: "Right at your camera",
-    desc: "Content sits directly below the camera. Your gaze stays natural — no awkward glancing.",
+    desc: "Your script sits directly below the camera in the notch. Your gaze stays natural — no awkward glancing to the side.",
   },
   {
     icon: AppWindow,
     title: "Floating window",
-    desc: "Switch to a floating window. Drag it anywhere on any display.",
+    desc: "Switch to a floating window and drag it anywhere. Great for external monitors or traditional teleprompter setups.",
   },
   {
     icon: Pause,
     title: "Pause instantly",
-    desc: "Hover to pause. Gather your thoughts, then continue seamlessly.",
+    desc: "Hover to pause auto-scroll. Gather your thoughts, ad-lib a moment, then continue seamlessly.",
   },
   {
     icon: SlidersHorizontal,
     title: "Control the pace",
-    desc: "Scroll manually or adjust auto-scroll speed. Your prompter adapts to your rhythm.",
+    desc: "Scroll manually or dial in your auto-scroll speed. Your prompter matches your natural speaking rhythm.",
   },
   {
-    icon: Type,
-    title: "Fully customizable",
-    desc: "Adjust window size, text size, and speed. Make it work your way.",
+    icon: Monitor,
+    title: "Works with any app",
+    desc: "Use it alongside OBS, Zoom, Google Meet, Loom, FaceTime, or any recording app. CamScript stays on top, always ready.",
   },
   {
     icon: FileEdit,
     title: "Built-in editor",
-    desc: "Write and polish scripts right in CamScript. No need for another app.",
+    desc: "Write scripts directly in CamScript, or paste from iPhone Notes, Google Docs, or any text app via Universal Clipboard.",
   },
   {
     icon: Lock,
     title: "Your content stays private",
-    desc: "Everything runs locally on your Mac. No cloud, no accounts, no analytics. Your scripts never leave your device.",
+    desc: "Everything runs locally on your Mac. No cloud uploads, no accounts, no analytics. Your scripts and ideas never leave your device.",
     wide: true,
     graphic: "privacy",
   },
@@ -90,11 +90,11 @@ const PrivacyGraphic = () => (
 );
 
 const FeaturesSection = () => (
-  <section className="py-20 md:py-28 px-6 bg-card" id="features">
+  <section className="py-20 md:py-28 px-6" id="features">
     <div className="max-w-5xl mx-auto">
       <div className="text-center mb-16">
         <p className="text-sm font-semibold text-smoke/70 uppercase tracking-widest mb-3">Why CamScript</p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Present naturally, without<br className="hidden sm:block" /> distractions.</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Create naturally, without<br className="hidden sm:block" /> distractions.</h2>
       </div>
 
       <div className="grid sm:grid-cols-2 gap-4">

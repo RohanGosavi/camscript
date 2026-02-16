@@ -3,12 +3,12 @@ import { faApple } from "@fortawesome/free-brands-svg-icons";
 
 const ScrollingText = ({ speed = "animate-scroll-text" }: {speed?: string;}) =>
 <div className={speed}>
-    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">Welcome everyone. Today I want to walk you through our latest product updates.</p>
-    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">We've been working hard on features you requested, and I'm thrilled to share what's next.</p>
-    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">Let me start with the improvements we made to the dashboard experience.</p>
-    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">Welcome everyone. Today I want to walk you through our latest product updates.</p>
-    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">We've been working hard on features you requested, and I'm thrilled to share what's next.</p>
-    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">Let me start with the improvements we made to the dashboard experience.</p>
+    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">Hey everyone, welcome back to the channel. In today's video I'm going to break down exactly how I grew to 100K subscribers.</p>
+    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">First, let's talk about consistency. I posted three times a week for six months straight — and here's what happened.</p>
+    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">If you're finding this helpful, smash that subscribe button. Now let's get into step two — thumbnails.</p>
+    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">Hey everyone, welcome back to the channel. In today's video I'm going to break down exactly how I grew to 100K subscribers.</p>
+    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">First, let's talk about consistency. I posted three times a week for six months straight — and here's what happened.</p>
+    <p className="text-[7px] text-white/90 leading-[1.6] mb-2 font-medium">If you're finding this helpful, smash that subscribe button. Now let's get into step two — thumbnails.</p>
   </div>;
 
 
@@ -18,19 +18,19 @@ const HeroSection = () => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Badge */}
         <div className="animate-fade-in">
-          
-
-
-
+          <div className="inline-flex items-center gap-2 bg-mist border border-border rounded-full px-4 py-1.5 mb-8">
+            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            <span className="text-sm font-medium text-smoke">Loved by content creators on Mac</span>
+          </div>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.06] mb-6 animate-fade-in" style={{ animationDelay: '0.12s', animationFillMode: 'both' }}>
-          Meet CamScript —<br />
-          <span className="text-smoke">Your discreet notch prompter.</span>
+          Your script. Your camera.<br />
+          <span className="text-smoke">Zero awkward glances.</span>
         </h1>
 
         <p className="text-lg md:text-xl text-smoke max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '0.24s', animationFillMode: 'both' }}>
-          A smart prompter that lives in your Mac's notch — right next to the camera, so your eye contact feels natural.
+          A teleprompter that sits inside your Mac's notch — right next to the camera. Script YouTube videos, nail live streams, and ace client calls while maintaining perfect eye contact.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5 animate-fade-in" style={{ animationDelay: '0.36s', animationFillMode: 'both' }}>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             Start Free Trial
           </a>
         </div>
-        <p className="text-xs text-muted-foreground mb-14 animate-fade-in" style={{ animationDelay: '0.36s', animationFillMode: 'both' }}>Requires macOS 14.7 or later.</p>
+        <p className="text-xs text-muted-foreground mb-14 animate-fade-in" style={{ animationDelay: '0.36s', animationFillMode: 'both' }}>Requires macOS 14.7 or later. Works with Apple Universal Clipboard.</p>
 
         {/* MacBook Mockup */}
         <div className="max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.48s', animationFillMode: 'both' }}>
@@ -104,7 +104,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                   <div className="absolute top-2 left-3 bg-black/30 backdrop-blur-sm rounded px-2 py-0.5">
-                    <span className="text-[7px] text-white/70 font-medium">You (presenting)</span>
+                    <span className="text-[7px] text-white/70 font-medium">You (recording)</span>
                   </div>
                 </div>
                 {/* Participant thumbnails */}
@@ -129,7 +129,7 @@ const HeroSection = () => {
           {/* Chin */}
           <div className="h-3 rounded-b-lg mx-[10%]" style={{ background: 'linear-gradient(to bottom, #1c1c1e, #2a2a2c)' }} />
           {/* Hinge */}
-          
+
         </div>
       </div>
     </section>);

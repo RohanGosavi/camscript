@@ -6,10 +6,10 @@ const entries = [
     date: "Feb 10, 2026",
     tag: "Latest",
     changes: [
-      "Added real-time multi-speaker detection",
-      "Improved transcription accuracy by 18%",
-      "New dark mode theme for the editor",
-      "Fixed audio sync issues on Windows",
+      "New smooth scroll mode for longer scripts",
+      "Improved font rendering in the notch prompter",
+      "Added keyboard shortcut to toggle prompter visibility",
+      "Fixed rare flickering issue on external displays",
     ],
   },
   {
@@ -17,9 +17,9 @@ const entries = [
     date: "Jan 22, 2026",
     tag: null,
     changes: [
-      "Introduced AI-powered auto-punctuation",
-      "Added support for 12 new languages",
-      "Performance improvements for long recordings",
+      "Added support for rich text formatting (bold, italic, highlights)",
+      "New mirror mode for traditional teleprompter setups",
+      "Improved paste handling from iPhone via Universal Clipboard",
       "Bug fixes and stability improvements",
     ],
   },
@@ -28,10 +28,10 @@ const entries = [
     date: "Dec 15, 2025",
     tag: null,
     changes: [
-      "New collaborative editing features",
-      "Export to SRT and VTT subtitle formats",
-      "Customizable keyboard shortcuts",
-      "Improved onboarding experience",
+      "Customizable keyboard shortcuts for scroll control",
+      "New font size and line spacing options",
+      "Added countdown timer before auto-scroll starts",
+      "Improved onboarding experience for first-time users",
     ],
   },
   {
@@ -39,10 +39,10 @@ const entries = [
     date: "Nov 8, 2025",
     tag: null,
     changes: [
-      "Launched CamScript Pro tier",
-      "Added cloud sync across devices",
-      "Speaker labeling improvements",
-      "Fixed memory leak on long sessions",
+      "Floating window mode — drag the prompter anywhere on screen",
+      "Adjustable auto-scroll speed with live preview",
+      "Improved compatibility with macOS Sequoia",
+      "Fixed edge case where prompter would not appear on notch-less Macs",
     ],
   },
 ];
@@ -50,7 +50,7 @@ const entries = [
 const Changelog = () => (
   <div className="min-h-screen bg-background text-foreground">
     <div className="max-w-3xl mx-auto px-6 py-20">
-      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 inline-block">← Back to home</Link>
+      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 inline-block">&larr; Back to home</Link>
       <h1 className="text-4xl font-bold mb-2">Changelog</h1>
       <p className="text-muted-foreground mb-12">All the latest updates and improvements to CamScript.</p>
 
@@ -68,7 +68,7 @@ const Changelog = () => (
             <ul className="space-y-1.5">
               {entry.changes.map((change, j) => (
                 <li key={j} className="text-sm text-muted-foreground flex items-start gap-2">
-                  <span className="text-foreground/40 mt-0.5">•</span>
+                  <span className="text-foreground/40 mt-0.5">&bull;</span>
                   {change}
                 </li>
               ))}
